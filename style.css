@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: rgb(233, 233, 233);
+
+    display: flex;align-items: center;justify-content: center;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#stopwatch {
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#watch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    font-size: 5rem;
+    color: rgb(78, 78, 78);
+
+    width: 100vw;
+    max-width: 500px;
+}
+
+#watch div {
+    width: 150px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+#buttons button {
+    width: 50%;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+#buttons button:active {
+    transform: scale(0.98);
+}
+
+#start-pause {
+    background-color: blueviolet;
+    color: white;
+}
+
+#start-pause:hover {
+    background-color: rgb(122, 39, 199);;
+}
+
+#reset {
+    background-color: grey;
+    color: white;
+}
+
+#reset:hover {
+    background-color: rgb(156, 156, 156);
+}
